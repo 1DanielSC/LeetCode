@@ -50,7 +50,6 @@ public class Solution {
                     temp = one;
                 }
             }
-            
             else temp = null;
             
             one = one.next;
