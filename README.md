@@ -2,4 +2,4 @@
 
 This repository was designed for uploading my LeetCode solutions. 
 
-In addition, I'll add the complexity of each solution.
+In addition, not only will I add the complexity of each solution sooner or later, but also explanation for each problem that I've resolved.
