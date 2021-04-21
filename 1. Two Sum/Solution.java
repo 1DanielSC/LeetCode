@@ -13,10 +13,10 @@ class Solution {
 				return a;
 			}else {
 				mapping.put(nums[i],i);
+				//Note that if we put a key that is already present in mapping, the value of 'i' will be overwritten
 			}
 		}
-		
-	
+
 		return a;
         
     }
