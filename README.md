@@ -1,5 +1,5 @@
 # LeetCode-Problems
 
-This repository was designed for uploading my LeetCode solutions. 
+This repository is designed to upload my LeetCode solutions. 
 
-Moreover, I'll add the complexity of each solution sooner or later, along with the explanation for each problem that I have resolved so far.
+On top of that, I'll add the complexity along with the explanation for each problem I have solved so far.
