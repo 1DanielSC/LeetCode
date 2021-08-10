@@ -22,7 +22,7 @@ class Solution {
         currentDepth++;
         
         //Since there aren't cycles in a tree, it isn't necessary to use a boolen visited[] array
-        //The result of this solution is the same of BFS, since there aren't edges conecting nodes from the same level
+        //The result of this solution is the same of BFS, since there aren't edges connecting nodes of the same level
         for(int i = 0; i < root.children.size();i++){
             
             int n = DFS(root.children.get(i), currentDepth);
