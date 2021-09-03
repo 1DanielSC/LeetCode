@@ -26,3 +26,47 @@ class Solution {
         return slow+1; //Slow started the counting at 0
     }
 }  
+
+//Ignore all the code below!
+
+/*
+    
+    int k = 1;
+        
+        for(int i = 1;i<nums.length;i++){
+            if(nums[i] != nums[i-1]){
+                nums[k++] = nums[i];
+            }
+        }
+        
+        return k;
+    
+    */
+    
+    
+    /*
+    public int removeDuplicates(int[] nums) {
+        if(nums.length <= 1)
+            return nums.length;
+        
+        int previous = nums[0];
+        int k = nums.length - 1;
+        
+        for(int i = 1;i<nums.length;i++){
+            if(nums[i] == previous){
+                shiftLeft(nums,i);
+                k--;
+            }
+            previous = nums[i];
+        }
+        
+        return k;
+    }
+    
+    
+    public void shiftLeft(int[] nums, int position){
+        
+        for(int i = position; i < nums.length-1; i++)
+            nums[i] = nums[i+1];
+    }
+    */
