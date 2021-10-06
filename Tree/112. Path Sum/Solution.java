@@ -30,9 +30,9 @@ class Solution {
             if(traverseSum(root.right, target,sum + root.val))
                 return true;
         }
-        
         return false;
-        
+        //return traverseSum(root.left, target, sum + root.val) || traverseSum(root.right, target,sum + root.val); --> line 25 ~ 33
+            //I don't know why but using the code line above is slower in runtime and consumes more memory (it doesn't give 100% in LeetCode).
     }
     
     private static boolean isChild(TreeNode node){
