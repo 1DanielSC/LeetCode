@@ -1,10 +1,6 @@
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
         
-        if(lists.length == 0)
-            return null;
-        
-        
         ListNode temp = new ListNode();
         
         PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
