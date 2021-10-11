@@ -29,7 +29,7 @@ class Solution {
             }
         }
         
-        return String.valueOf(answer);
+        return new String(answer);
     }
     
     public static boolean isVowel(char c){
