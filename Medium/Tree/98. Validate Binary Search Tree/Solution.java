@@ -1,5 +1,5 @@
 
-//First and most efficient solution:
+//First solution:
 class Solution {
     public boolean isValidBST(TreeNode root) {
         
@@ -22,8 +22,9 @@ class Solution {
 }
 
 
-//Second and least efficient solution:
+//Second and less efficient solution:
   //InOrder traversal gives us a list with all tree elements sorted
+    //We'll need to use an array to store the elements. Hence, the space complexity will be O(n), whereas the space complexity of the first solution is O(1)
 class Solution2 {
     public boolean isValidBST(TreeNode root) {
         ArrayList<Integer> list = new ArrayList<Integer>();
