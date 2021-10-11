@@ -2,6 +2,8 @@ class Solution {
   //Two pointer approach. One going from left to right and the other from right to left
     public String reverseVowels(String s) {
         
+      //The java String is immutable, that is to say, we cannot change a specific character.
+      //As result of this, we'll create a char array to place the characters in the correct order according to the problem
         char[] answer = new char[s.length()];
         
         int i = 0, j = s.length() - 1;
