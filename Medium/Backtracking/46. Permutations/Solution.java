@@ -10,6 +10,31 @@ class Solution {
         return finalList;
     }
     
+    
+    
+    public static void solve(List<List<Integer>> finalList, List<Integer> list, int[] nums){
+        
+        if(list.size() == nums.length){
+            finalList.add(new ArrayList(list)); //new list to not have problems with reference.
+            return;
+        }
+            
+        //Test each element from nums array --> nums[i]
+        for(int i = 0; i < nums.length ; i++){
+            
+            //Verify if element is already present is the partial list (we don't want to have duplicated elements)
+            if(!list.contains(nums[i])){
+                
+                list.add(nums[i]);
+                solve(finalList, list, nums);
+                list.remove(list.size()-1);
+            }
+        }
+        
+    }
+    
+    
+    /*
     public static boolean solve(List<List<Integer>> finalList, List<Integer> list, int[] nums){
         
         if(list.size() == nums.length){
@@ -34,4 +59,5 @@ class Solution {
         
         return false;
     }
+    */
 }
