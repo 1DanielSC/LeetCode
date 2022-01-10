@@ -10,7 +10,7 @@ class Solution {
     }
     public void solve(List<List<Integer>> finalList, List<Integer> list, int n, int k, int start){
         //Check if it's a final solution
-        if(list.size() == k){
+        if(k == 0){
             finalList.add(new ArrayList(list));
             return;
         }
@@ -18,12 +18,12 @@ class Solution {
         
         //Test each possible number not considering the previous numbers used (usage of "start")
         for(int i = start; i <= n; i++){
-            //Avoid repeated numbers
-            if(!list.contains(i)){
-                list.add(i);
-                solve(finalList,list,n,k,i);
-                list.remove(list.size() - 1);
-            }
+            
+            //Avoid repeated and already used numbers by passing i+1 as an argument to "start" parameter
+             list.add(i);
+             solve(finalList,list,n,k-1,i+1);
+             list.remove(list.size() - 1);
+            
             
         }
         
